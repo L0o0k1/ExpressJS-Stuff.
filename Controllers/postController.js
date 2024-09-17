@@ -48,7 +48,7 @@ export const getPost = (req, res, next) => {
 // @Desc    Create Post
 // @Route   GET  /api/posts/
 // -----------------------
-export const creatPost = (req, res) => {
+export const creatPost = (req, res, next) => {
   const newPost = {
     id: posts.length + 1,
     title: req.body.title,
